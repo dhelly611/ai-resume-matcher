@@ -82,12 +82,12 @@ if __name__ == "__main__":
     """
 
     print("=" * 50)
-    print("🚀 RUNNING ATS RESUME SCANNER")
+    print(">>> RUNNING ATS RESUME SCANNER")
     print("=" * 50)
 
     result = analyze_ats_match(sample_resume, sample_job_description)
 
-    print(f"\n📊 ATS Match Score: {result['score']}%")
-    print(f"✅ Matched Skills ({result['total_matched']}/{result['total_required']}): {result['matched_skills']}")
-    print(f"❌ Missing Skills: {result['missing_skills']}\n")
+    print(f"\n[+] ATS Match Score: {result['score']}%")
+    print(f"[+] Matched Skills ({result['total_matched']}/{result['total_required']}): {result['matched_skills']}")
+    print(f"[-] Missing Skills: {result['missing_skills']}\n")
     print("=" * 50)
